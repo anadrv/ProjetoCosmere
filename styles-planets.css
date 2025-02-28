@@ -26,7 +26,7 @@
 .planet-info {
     
     color: rgb(249, 249, 249);
-    opacity: 0;
+    opacity: 1;
     position: relative;
     left: -40px; 
 }
@@ -58,6 +58,35 @@
     opacity: 1;
 }
 
+
+.planet-container.scadrial {
+
+    top: 58vh; 
+    left: 72vw; 
+}
+
+.planet-container.scadrial .planet img {
+    width: 12vw; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção */
+}
+
+
+@keyframes brilho-scadrial {
+    0%, 100% {
+        filter: drop-shadow(0 0 10px #292155);
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #49426f);
+    }
+}
+
+.scadrial-img img {
+    animation: brilho-scadrial 2s infinite alternate;
+}
+
+.planet-container.scadrial .planet-info {
+    left: -2vw; 
+}
 @media (max-width: 1024px) { /* Tablets */
     .planet-container {
         top: 8vh;

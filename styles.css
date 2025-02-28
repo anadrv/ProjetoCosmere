@@ -51,14 +51,11 @@ html, body {
   }
 
   .custom-button {
-    background-color: #4C347E; 
- 
-    padding-left: 3rem; 
-    padding-right: 3rem; 
-    padding-top: 0.5rem; 
-    padding-bottom: 0.5rem; 
+    background-color: #4C347E;
+    padding: 0.4rem 4vw; 
     border-radius: 9999px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    font-size: clamp(0.8rem, 2vw, 1rem); 
 }
   
   /* Styling for the button's glowing effect on hover */
@@ -259,4 +256,6 @@ html, body {
     bottom: 10px;
     font-size: 1rem;
     font-weight: 400;
+    bottom: -10px;
+    font-size: 1;
   }
