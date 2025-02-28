@@ -8,7 +8,7 @@
 }
 
 .planet {
-    width: 15vw; /* Responsivo */
+    width: 13vw; 
     height: auto;
 }
 
@@ -20,7 +20,7 @@
 .planet img {
     max-width: 100%;
     height: auto;
-    animation: brilho-nalthis 2s infinite alternate;
+    animation: brilho-nalthis 3s infinite alternate;
 }
 
 .planet-info {
@@ -58,15 +58,17 @@
     opacity: 1;
 }
 
+/* Scadrial */
+
 
 .planet-container.scadrial {
 
-    top: 58vh; 
-    left: 72vw; 
+    top: 69vh; 
+    left: 70vw; 
 }
 
 .planet-container.scadrial .planet img {
-    width: 12vw; /* Ajuste conforme necessário */
+    width: 9vw; /* Ajuste conforme necessário */
     height: auto; /* Mantém a proporção */
 }
 
@@ -85,8 +87,35 @@
 }
 
 .planet-container.scadrial .planet-info {
-    left: -2vw; 
+    left: -3.7vw; 
 }
+
+
+/* Roshar */
+
+.planet-container.roshar {
+    top: 18vh; 
+    left: 76vw; 
+}
+.planet-container.roshar .planet img {
+    width: 10vw; 
+    height: auto; 
+}  
+
+@keyframes brilho-roshar {
+    0%, 100% {
+        filter: drop-shadow(0 0 10px #F9A638);
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #e8b675);
+    }
+}
+
+.roshar-img img {
+    animation: brilho-roshar 4s infinite alternate;
+}
+
+
 @media (max-width: 1024px) { /* Tablets */
     .planet-container {
         top: 8vh;
