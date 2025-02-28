@@ -1,0 +1,76 @@
+.planet-container {
+    display: flex;
+    align-items: center; 
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+
+}
+
+.planet {
+    width: 15vw; /* Responsivo */
+    height: auto;
+}
+
+.planet-img {
+    margin-right: -5px; 
+
+}
+
+.planet img {
+    max-width: 100%;
+    height: auto;
+    animation: brilho-nalthis 2s infinite alternate;
+}
+
+.planet-info {
+    
+    color: rgb(249, 249, 249);
+    opacity: 0;
+    position: relative;
+    left: -40px; 
+}
+.planet-name {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.info-books {
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+}
+
+@keyframes brilho-nalthis {
+    0%, 100% {
+        filter: drop-shadow(0 0 10px #692b6d);
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #d4518c);
+    }
+}
+
+.info-books:hover {
+    color: #d4518c; 
+}
+.planet-container:hover .planet-info {
+    opacity: 1;
+}
+
+@media (max-width: 1024px) { /* Tablets */
+    .planet-container {
+        top: 8vh;
+        left: 5vw;
+    }
+
+    .planet {
+        width: 18vw;
+    }
+
+    .planet-info {
+        left: -30px; /* Aproxima o texto para telas menores */
+    }
+}
+
+
