@@ -2,8 +2,10 @@
     display: flex;
     align-items: center; 
     position: absolute;
-    top: 10vh;
-    left: 10vw;
+    top: 16vh;
+    left: 2vw;
+    animation: subir 2s ease-out forwards;
+    opacity: 0;
 
 }
 
@@ -51,6 +53,17 @@
     }
 }
 
+@keyframes subir {
+    from {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .info-books:hover {
     color: #d4518c; 
 }
@@ -63,7 +76,7 @@
 
 .planet-container.scadrial {
 
-    top: 69vh; 
+    top: 75vh; 
     left: 70vw; 
 }
 
@@ -113,6 +126,129 @@
 
 .roshar-img img {
     animation: brilho-roshar 4s infinite alternate;
+}
+
+
+/*Sel*/
+
+.planet-container.sel {
+    top: 52vh; 
+    left: 54vw; 
+}
+.planet-container.sel .planet img {
+    width: 8vw; 
+    height: auto; 
+}  
+
+@keyframes brilho-sel {
+    0%, 100% {
+        filter: drop-shadow(0 0 10px #34706a);
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #83CFC8);
+    }
+}
+
+.sel-img img {
+    animation: brilho-sel 4s infinite alternate;
+}
+
+
+/*Taldain*/
+
+.planet-container.taldain {
+    top: 23vh; 
+    left: 48vw; 
+}
+.planet-container.taldain .planet img {
+    width: 8.5vw; 
+    height: auto; 
+}  
+
+@keyframes brilho-taldain {
+    0%, 100% {
+        filter: drop-shadow(0 0 10px #113862);
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #1D62AA);
+    }
+}
+
+.taldain-img img {
+    animation: brilho-taldain 4s infinite alternate;
+}
+
+
+/*First of the sun*/
+
+.planet-container.first {
+    top: 13vh; 
+    left: 29vw; 
+}
+.planet-container.first .planet img {
+    width: 5.5vw; 
+    height: auto; 
+}  
+
+@keyframes brilho-first {
+    0%, 100% {
+        filter: drop-shadow(0 0 10px #524BA0);
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #6a6699);
+    }
+}
+
+.first-img img {
+    animation: brilho-first 4s infinite alternate;
+}
+
+/*Yolen*/
+
+.planet-container.yolen {
+    top: 44vh; 
+    left: 21vw; 
+}
+.planet-container.yolen .planet img {
+    width: 9.5vw; 
+    height: auto; 
+}  
+
+@keyframes brilho-yolen {
+    0%, 100% {
+        filter: drop-shadow(0 0 10px #8e4a6f);
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #C5679B);
+    }
+}
+
+.yolen-img img {
+    animation: brilho-yolen 4s infinite alternate;
+}
+
+/*Threnodyl*/
+
+.planet-container.threnodyl {
+    top: 71vh; 
+    left: 35vw; 
+}
+.planet-container.threnodyl .planet img {
+    width: 5.5vw; 
+    height: auto; 
+}  
+
+@keyframes brilho-threnodyl {
+    0%, 100% {
+        filter: drop-shadow(0 0 10px #1F467D);
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #4a6791);
+    }
+}
+
+.threnodyl-img img {
+    animation: brilho-threnodyl 4s infinite alternate;
 }
 
 
