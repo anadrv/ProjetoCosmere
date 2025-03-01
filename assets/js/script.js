@@ -1,3 +1,13 @@
+
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("/pages/navbar.html")
+      .then(response => response.text())
+      .then(data => {
+          document.body.insertAdjacentHTML("afterbegin", data);
+      });
+});
+
+
 // create instance of kinet with custom settings
 var kinet = new Kinet({
     acceleration: 0.02,
@@ -27,3 +37,23 @@ var kinet = new Kinet({
   kinet.on('end', function() {
     console.log('end');
   });
+
+
+  //stars
+  function createStars(count) {
+    const container = document.querySelector('.stars-container');
+
+    for (let i = 0; i < count; i++) {
+      let star = document.createElement('div');
+      star.classList.add('star');
+      
+      star.style.left = `${Math.random() * 100}vw`;
+      star.style.top = `${Math.random() * 100}vh`;
+      star.style.animationDuration = `${Math.random() * 2 + 1}s`;
+      
+
+      container.appendChild(star);
+    }
+  }
+
+  createStars(200);

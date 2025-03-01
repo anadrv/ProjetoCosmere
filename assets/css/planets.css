@@ -35,13 +35,20 @@
 .planet-name {
     font-size: 1.2rem;
     letter-spacing: 1px;
+    font-weight: 700;
 }
 
 .info-books {
     font-size: 0.8rem;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
+    font-weight: 400;
 
+}
+
+.book-name {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
 
 @keyframes brilho-nalthis {
@@ -153,6 +160,9 @@
     animation: brilho-sel 4s infinite alternate;
 }
 
+.planet-container.sel .planet-info {
+    left: -3.7vw; 
+}
 
 /*Taldain*/
 
@@ -203,6 +213,10 @@
     animation: brilho-first 4s infinite alternate;
 }
 
+.planet-info.first {
+    left: -6.7vw; 
+}
+
 /*Yolen*/
 
 .planet-container.yolen {
@@ -251,6 +265,73 @@
     animation: brilho-threnodyl 4s infinite alternate;
 }
 
+
+.planet-info.threnodyl {
+    left: -6.7vw; 
+}
+
+
+/*Stars*/
+
+.stars-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle ease-in-out infinite alternate;
+  }
+
+  @keyframes twinkle {
+    from { 
+        opacity: 0.3; 
+        transform: scale(0.8); }
+    to { 
+        opacity: 1; 
+        transform: scale(1.2); }
+  }
+
+.star-base {
+    position: relative;
+    width: 2.5vw;
+    opacity: 0.8;
+    animation: twinkle 1.5s ease-in-out infinite alternate;
+}
+
+.star-1 {
+
+    top: 1vh;
+    left: -1vw;
+}
+
+.star-2 {
+
+    top: 40vh;
+    left: 4vw;
+}
+.star-3 {
+
+    top: 29vh;
+    left: -41vw;
+}
+.star-4 {
+
+    top: -30vh;
+    left: 14vw;
+}
+.star-5 {
+
+    top: 24vh;
+    left: 35vw;
+}
 
 @media (max-width: 1024px) { /* Tablets */
     .planet-container {
