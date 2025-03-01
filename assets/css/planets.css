@@ -333,19 +333,6 @@
     left: 35vw;
 }
 
-@media (max-width: 1024px) { /* Tablets */
-    .planet-container {
-        top: 8vh;
-        left: 5vw;
-    }
 
-    .planet {
-        width: 18vw;
-    }
-
-    .planet-info {
-        left: -30px; /* Aproxima o texto para telas menores */
-    }
-}
 
 
